@@ -9,7 +9,7 @@ def key_for_min_value(name_hash)
   key_for_min_value = ""
   if name_hash = {}
     nil
-    break
+    Exit
   else
     name_hash.each do |key, value|
       if value < min_value
