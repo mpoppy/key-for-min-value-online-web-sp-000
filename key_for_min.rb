@@ -7,13 +7,13 @@ ikea = {:chair => 25, :table => 85, :mattress => 450}
 def key_for_min_value(name_hash)
   min_value = Float::INFINITY
   key_for_min_value = ""
+  if name_hash = {} nil
   name_hash.each do |key, value|
     if value < min_value
       key_for_min_value = key
       min_value = value
-    else
-  
     end
+  end
   end
   key_for_min_value
 end
