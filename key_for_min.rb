@@ -7,7 +7,7 @@ ikea = {:chair => 25, :table => 85, :mattress => 450}
 def key_for_min_value(name_hash)
   min_value = Float::INFINITY
   key_for_min_value = ""
-  if name_hash = {}
+  if name_hash == {}
     nil
     exit
   else
